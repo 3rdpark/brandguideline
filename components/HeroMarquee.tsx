@@ -49,8 +49,7 @@ const HeroMarquee: React.FC<{ trends: TrendItem[] }> = ({ trends }) => {
           Introduction to <br/>Core Elements
         </h1>
         <p className="text-lg md:text-[1.375rem] text-[#555555] max-w-3xl mx-auto font-medium leading-[1.6]">
-          뉴타입 디자인의 포트폴리오 감성을 담아, <br/>
-          우리만의 독창적인 브랜드 아이덴티티를 시각적으로 전달합니다.
+          KakaoBank answer가 지향하는 생활 금융의 친근함과 답을 찾아가는 살아있는 흐름을 담아,<br/>친화적인 블로그 톤으로 생각의 과정을 자연스럽게 전달하며 브랜드 정체성을 명확히 드러냅니다.
         </p>
       </div>
 
