@@ -7,14 +7,44 @@ const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // 뉴타입 디자인의 포트폴리오 이미지들을 매칭했습니다.
+    // 요청하신 6개의 이미지 소스를 적용했습니다.
     const dummyTrends: TrendItem[] = [
-      { id: '1', text: 'Work 01', title: 'Design Project 1', imageUrl: 'https://newtype.design/wp-content/uploads/2023/10/thumb-nt-re.jpg', ratio: '3:2' },
-      { id: '2', text: 'Work 02', title: 'Design Project 2', imageUrl: 'https://newtype.design/wp-content/uploads/2023/10/thumb-frizm.jpg', ratio: 'square' },
-      { id: '3', text: 'Work 03', title: 'Design Project 3', imageUrl: 'https://newtype.design/wp-content/uploads/2021/04/p-hyundaicard.jpg', ratio: '3:2' },
-      { id: '4', text: 'Work 04', title: 'Design Project 4', imageUrl: 'https://newtype.design/wp-content/uploads/2021/04/p-mclaren.jpg', ratio: 'square' },
-      { id: '5', text: 'Work 05', title: 'Design Project 5', imageUrl: 'https://newtype.design/wp-content/uploads/2021/04/p-laneige.jpg', ratio: '3:2' },
-      { id: '6', text: 'Work 06', title: 'Design Project 6', imageUrl: 'https://newtype.design/wp-content/uploads/2023/10/thumb-laneige.jpg', ratio: 'square' },
+      { 
+        id: '1', 
+        text: 'Visual Identity', 
+        imageUrl: 'https://dm3yrk3qb82fp.cloudfront.net/works/7f1e5064-207f-4e5b-9e01-a942400f60dc.jpg', 
+        ratio: '3:2' 
+      },
+      { 
+        id: '2', 
+        text: 'Brand Experience', 
+        imageUrl: 'https://dm3yrk3qb82fp.cloudfront.net/works/b900c6ad-9534-4308-808b-46a3c6aa28bc.jpg', 
+        ratio: 'square' 
+      },
+      { 
+        id: '3', 
+        text: 'Digital Product', 
+        imageUrl: 'https://dm3yrk3qb82fp.cloudfront.net/works/405511f1-fbd3-4ba9-897b-8d95c3ddfc99.png', 
+        ratio: '3:2' 
+      },
+      { 
+        id: '4', 
+        text: 'Typography System', 
+        imageUrl: 'https://dm3yrk3qb82fp.cloudfront.net/works/57f12e2f-d5f2-48ed-86b0-01e922e5e546.png', 
+        ratio: 'square' 
+      },
+      { 
+        id: '5', 
+        text: 'Core Elements', 
+        imageUrl: 'https://dm3yrk3qb82fp.cloudfront.net/works/09e79803-63e5-4ea4-b698-6ecff0fc25f8.png', 
+        ratio: '3:2' 
+      },
+      { 
+        id: '6', 
+        text: 'Creative Direction', 
+        imageUrl: 'https://dm3yrk3qb82fp.cloudfront.net/works/ecb65758-60b3-45fc-9a21-10c8cb01b2ca.png', 
+        ratio: 'square' 
+      },
     ];
     
     setTrends(dummyTrends);
@@ -28,7 +58,7 @@ const App: React.FC = () => {
       ) : (
         <div className="h-screen flex items-center justify-center">
           <div className="animate-pulse text-2xl font-bold text-gray-300 font-sans tracking-tight">
-            Loading Newtype Styles...
+            Deploying New Brand Assets...
           </div>
         </div>
       )}
