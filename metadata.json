@@ -1,0 +1,7 @@
+{
+  "name": "Hero Carousel Visual",
+  "description": "Pinterest Predicts에서 착안한 비주얼 중심의 대시보드로, 서로 다른 화면 비율의 이미지가 흐르듯 전개되는 마키 구조와 Gemini 기반 트렌드 예측을 결합한 경험을 제공한다",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
